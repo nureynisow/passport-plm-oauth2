@@ -1,0 +1,33 @@
+{
+  "name": "passport-plm-oauth2",
+  "version": "0.1.1",
+  "description": "PLM OAuth2.0 auth strategies",
+  "keywords": [
+    "passport",
+    "oauth",
+    "authentication",
+    "cas"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nureynisow/passport-plm-oauth2.git"
+  },
+  "author": "Pape SoW <papsow@linux.com>",
+  "main": "./lib/passport-plm-oauth",
+  "dependencies": {
+    "passport-oauth": "^1.0.0",
+    "passport-oauth2": "^1.1.2",
+    "pkginfo": "^0.3.0"
+  },
+  "bugs": {
+    "url": "https://github.com/nureynisow/passport-plm-oauth2/issues"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "no test"
+  },
+  "license": "MIT"
+}
