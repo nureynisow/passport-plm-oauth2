@@ -12,12 +12,12 @@ passport.deserializeUser(function (obj,done) {
 	done(null,obj);
 });
 
-passport.use(new PLMStrategy({
-	'authorizationURL'	: '----',
-    'tokenURL'			: '----',
-    'clientID'			: '----',
-    'clientSecret'		: '----',
-    'callbackURL'		: '----'
+passport.use('plm',new PLMStrategy({
+    'authorizationURL'	: 'https://plm.math.cnrs.fr/sp/oauth/authorize',
+    'tokenURL'			: 'https://plm.math.cnrs.fr/sp/oauth/token',
+    'clientID'			: 'de8284c6c7ed17712008e612ef26712934bc34516574ddbc3276957ec71a8442',
+    'clientSecret'		: '156fa63b3458b2ab7c73e07a8d89d57e2e473b518f0ed0e92306639b04db9c05',   
+    'callbackURL'		: 'https://localhost:3000/auth/plm/callback'
 },function (token,secretToken,profile,done) {
 	process.nextTick(function () {
 		console.log(">>",util.inspect(profile,false,null));
